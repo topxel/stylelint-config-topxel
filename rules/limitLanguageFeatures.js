@@ -78,10 +78,10 @@ module.exports = {
   'selector-attribute-operator-whitelist': null,
 
   // specify a pattern for class selectors
-  'selector-class-pattern': /^[a-zA-Z]+(?:[a-zA-Z0-9-]+)*$/,
+  'selector-class-pattern': '^[a-zA-Z]+(?:[a-zA-Z0-9-]+)*$',
 
   // specify a pattern for id selectors
-  'selector-id-pattern': /^[a-zA-Z]+(?:[a-zA-Z0-9-]+)*$/,
+  'selector-id-pattern': '^[a-zA-Z]+(?:[a-zA-Z0-9-]+)*$',
 
   // limit the number of attribute selectors in a selector
   'selector-max-attribute': 1,
