@@ -63,19 +63,13 @@ Running the linter in the CLI is great but it doesn't provide instant feedback w
 
 Any of the extensions bellow will read your config from `package.json` or `.stylelintrc` and start live linting your css files inside the editor, so no further configuration is needed.
 
-&nbsp;
-
 ### Atom
 
-Use the `apm` command to install [linter](https://atom.io/packages/linter) and [linter-stylelint](https://atom.io/packages/linter-stylelint) Atom packages.
+Use the `apm` command to install [linter](https://atom.io/packages/linter) and [linter-stylelint](https://atom.io/packages/linter-stylelint) Atom packages. If the `apm` command is not available in your shell, check that the `Atom Shell Commands` are installed.
 
 ```
 apm install linter linter-stylelint
 ```
-
-If the `apm` command is not available in your shell, check that the `Atom Shell Commands` are installed.
-
-&nbsp;
 
 ### VSCode
 
@@ -90,8 +84,6 @@ If the `apm` command is not available in your shell, check that the `Atom Shell 
   "scss.validate": false
 }
 ```
-
-&nbsp;
 
 ### Sublime Text
 
