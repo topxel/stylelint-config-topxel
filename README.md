@@ -11,12 +11,14 @@ Use it as is or as a foundation for your own custom stylint configuration.
 Install `stylelint` and `stylelint-config-topxel` either with Yarn or npm:
 
 **With Yarn**
-```
+
+```bash
 yarn add --dev stylelint stylelint-config-topxel
 ```
 
 **With npm**
-```
+
+```bash
 npm install --save-dev stylelint stylelint-config-topxel
 ```
 
@@ -24,6 +26,7 @@ npm install --save-dev stylelint stylelint-config-topxel
 
 ## Setup
 Topxel's shareable stylelint rules are bundled in `stylelint-config-topxel` package. To enable these rules add a `stylelint` property in your `package.json` or create a `.stylelintrc` file in the root directory. Although we encourage using the first method to avoid having hidden files in your project. See the [stylelint configuration docs](https://stylelint.io/user-guide/configuration/) for more details.
+
 ```json
 {
   "stylelint": {
@@ -37,6 +40,7 @@ Topxel's shareable stylelint rules are bundled in `stylelint-config-topxel` pack
 ## Using the linter in the CLI
 
 You can run stylelint by adding a custom linting script to your `package.json`. Keep in mind that you must provide the specific relative path where your css files are located. See the [stylelint CLI docs](https://stylelint.io/user-guide/cli/) for more details.
+
 ```json
 {
   "scripts": {
@@ -46,12 +50,14 @@ You can run stylelint by adding a custom linting script to your `package.json`. 
 ```
 
 **Running the script with Yarn**
-```
+
+```bash
 yarn run stylelint
 ```
 
 **Running the script with npm**
-```
+
+```bash
 npm run stylelint
 ```
 
@@ -67,7 +73,7 @@ Any of the extensions bellow will read your config from `package.json` or `.styl
 
 Use the `apm` command to install [linter](https://atom.io/packages/linter) and [linter-stylelint](https://atom.io/packages/linter-stylelint) Atom packages. If the `apm` command is not available in your shell, check that the `Atom Shell Commands` are installed.
 
-```
+```bash
 apm install linter linter-stylelint
 ```
 
