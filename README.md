@@ -103,3 +103,7 @@ For example, to override the rule `string-quotes` from double to single and turn
   }
 }
 ```
+
+## License
+
+Copyright (c) 2017 [Topxel](https://github.com/topxel) - Licensed under the [MIT License](./LICENSE).
