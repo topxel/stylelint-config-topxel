@@ -6,10 +6,10 @@
   "author": "Asier Martinez <asier@topxel.com>",
   "license": "MIT",
   "dependencies": {
-    "merge": "^1.2.0"
+    "merge": "^1.2.0",
+    "stylelint-order": "^0.7.0"
   },
   "peerDependencies": {
-    "stylelint": "^8.1.1",
-    "stylelint-order": "^0.7.0"
+    "stylelint": "^8.1.1"
   }
 }
