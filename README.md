@@ -4,6 +4,8 @@ Topxel's shareable rules and configuration for [stylelint](https://stylelint.io/
 
 Use it as is or as a foundation for your own custom stylint configuration.
 
+&nbsp;
+
 ## Installation
 
 Install `stylelint` and `stylelint-config-topxel` either with Yarn or npm:
@@ -18,6 +20,8 @@ yarn add --dev stylelint stylelint-config-topxel
 npm install --save-dev stylelint stylelint-config-topxel
 ```
 
+&nbsp;
+
 ## Setup
 Topxel's shareable stylelint rules are bundled in `stylelint-config-topxel` package. To enable these rules add a `stylelint` property in your `package.json` or create a `.stylelintrc` file in the root directory. Although we encourage using the first method to avoid having hidden files in your project. See the [stylelint configuration docs](https://stylelint.io/user-guide/configuration/) for more details.
 ```json
@@ -27,6 +31,8 @@ Topxel's shareable stylelint rules are bundled in `stylelint-config-topxel` pack
   }
 }
 ```
+
+&nbsp;
 
 ## Using the linter in the CLI
 
@@ -49,21 +55,27 @@ yarn run stylelint
 npm run stylelint
 ```
 
+&nbsp;
+
 ## Using the linter with your favourite code editor
 
 Running the linter in the CLI is great but it doesn't provide instant feedback while you are writing your code. That's why we always encourage our team to extend the code editor with some tools that can help with this task.
 
-Any of the extensions bellow will read your config from package.json or .stylelintrc and start live linting your css files inside the editor, so no further configuration is needed.
+Any of the extensions bellow will read your config from `package.json` or `.stylelintrc` and start live linting your css files inside the editor, so no further configuration is needed.
+
+&nbsp;
 
 ### Atom
 
-Use the apm command to install [linter](https://atom.io/packages/linter) and [linter-stylelint](https://atom.io/packages/linter-stylelint) Atom packages.
+Use the `apm` command to install [linter](https://atom.io/packages/linter) and [linter-stylelint](https://atom.io/packages/linter-stylelint) Atom packages.
 
 ```
 apm install linter linter-stylelint
 ```
 
 If the `apm` command is not available in your shell, check that the `Atom Shell Commands` are installed.
+
+&nbsp;
 
 ### VSCode
 
@@ -79,6 +91,8 @@ If the `apm` command is not available in your shell, check that the `Atom Shell 
 }
 ```
 
+&nbsp;
+
 ### Sublime Text
 
 Use [Package Control](https://packagecontrol.io/installation) to install the linter plugin.
@@ -87,10 +101,11 @@ Use [Package Control](https://packagecontrol.io/installation) to install the lin
 2. When the list of available packages appears, type `linter` and select `SublimeLinter`.
 3. Repeat step 1 and when the package list appears again, type `stylelint` and select `SublimeLinter-contrib-stylelint`.
 
+&nbsp;
 
 ## Extending the config
 
-If you want to extend or override some of the rules of this configuration, simply add a `"rules"` key to your config. See the [stylelint rules configuration docs](https://stylelint.io/user-guide/configuration/#rules) for more details.
+If you want to extend or override some of the rules in this configuration, simply add a `"rules"` key to your config. See the [stylelint rules configuration docs](https://stylelint.io/user-guide/configuration/#rules) for more details.
 
 For example, to override the rule `string-quotes` from double to single and turn off the `number-leading-zero` rule:
 
@@ -103,6 +118,7 @@ For example, to override the rule `string-quotes` from double to single and turn
   }
 }
 ```
+&nbsp;
 
 ## License
 
