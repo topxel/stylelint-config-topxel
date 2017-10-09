@@ -10,8 +10,9 @@ module.exports = {
   // disallow an unspaced operator within calc functions
   'function-calc-no-unspaced-operator': true,
 
-  /** disallow direction values in linear-gradient() calls that are not valid
-   *  according to the standard syntax.
+  /**
+   * disallow direction values in linear-gradient() calls that are not valid
+   * according to the standard syntax.
    */
   'function-linear-gradient-no-nonstandard-direction': true,
 
@@ -36,13 +37,15 @@ module.exports = {
     { ignore: 'consecutive-duplicates' }
   ],
 
-  /** disallow longhand properties that can be combined into one shorthand
-   *  property
+  /**
+   * disallow longhand properties that can be combined into one shorthand
+   * property
    */
   'declaration-block-no-redundant-longhand-properties': true,
 
-  /** disallow shorthand properties that override related longhand properties
-   *  within declaration blocks
+  /**
+   * disallow shorthand properties that override related longhand properties
+   * within declaration blocks
    */
   'declaration-block-no-shorthand-property-overrides': true,
 
@@ -91,8 +94,9 @@ module.exports = {
   // limit the depth of nesting
   'max-nesting-depth': 3,
 
-  /** disallow selectors of lower specificity from coming after overriding
-   *  selectors of higher specificity
+  /**
+   * disallow selectors of lower specificity from coming after overriding
+   * selectors of higher specificity
    */
   'no-descending-specificity': true,
 

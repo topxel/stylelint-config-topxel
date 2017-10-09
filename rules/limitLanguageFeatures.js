@@ -52,16 +52,18 @@ module.exports = {
   // disallow !important within declarations
   'declaration-no-important': true,
 
-  /** specify a blacklist of disallowed property and unit pairs within
-   *  declarations
+  /**
+   * specify a blacklist of disallowed property and unit pairs within
+   * declarations
    */
   'declaration-property-unit-blacklist': null,
 
   // specify a whitelist of allowed property and unit pairs within declarations
   'declaration-property-unit-whitelist': null,
 
-  /** specify a blacklist of disallowed property and value pairs within
-   *  declarations
+  /**
+   * specify a blacklist of disallowed property and value pairs within
+   * declarations
    */
   'declaration-property-value-blacklist': { '/^animation/': ['linear'] },
 
@@ -114,7 +116,7 @@ module.exports = {
   'selector-nested-pattern': null,
 
   // disallow qualifying a selector by type
-  'selector-no-qualifying-type': [true, { ignore: ['attribute'] }],
+  'selector-no-qualifying-type': [true, { ignore: ['attribute', 'class'] }],
 
   // disallow vendor prefixes for selectors
   'selector-no-vendor-prefix': true,
