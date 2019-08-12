@@ -92,7 +92,7 @@ module.exports = {
   'selector-max-class': 2,
 
   // limit the number of combinators in a selector
-  'selector-max-combinators': 1,
+  'selector-max-combinators': 2,
 
   // limit the number of compound selectors in a selector
   'selector-max-compound-selectors': 3,

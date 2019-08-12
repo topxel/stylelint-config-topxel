@@ -56,13 +56,13 @@ module.exports = {
   'function-whitespace-after': 'always',
 
   // require or disallow a leading zero for fractional numbers less than 1
-  'number-leading-zero': 'never',
+  'number-leading-zero': 'always',
 
   // disallow trailing zeros in numbers
   'number-no-trailing-zeros': true,
 
   // specify single or double quotes around strings
-  'string-quotes': 'double',
+  'string-quotes': 'single',
 
   // disallow units for zero lengths
   'length-zero-no-unit': true,
