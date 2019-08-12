@@ -26,7 +26,7 @@ module.exports = {
   'shorthand-property-no-redundant-values': true,
 
   // disallow unknown properties
-  'property-no-unknown': [true, { checkPrefixed: true }],
+  'property-no-unknown': [true, { checkPrefixed: true, ignoreProperties: ['/^-styled-mixin/'] }],
 
   // disallow !important within keyframe declarations
   'keyframe-declaration-no-important': true,
@@ -101,10 +101,12 @@ module.exports = {
   'no-descending-specificity': true,
 
   // disallow duplicate selectors
-  'no-duplicate-selectors': true,
+  // disabled for styled-components to prevent false positives
+  'no-duplicate-selectors': null,
 
   // disallow empty sources
-  'no-empty-source': true,
+  // disabled for styled-components to prevent false positives
+  'no-empty-source': null,
 
   // disallow extra semicolons
   'no-extra-semicolons': true,

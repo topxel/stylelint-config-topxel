@@ -71,7 +71,8 @@ module.exports = {
   'unit-case': 'lower',
 
   // specify lowercase or uppercase for keywords values
-  'value-keyword-case': 'lower',
+  // specific for styled-components
+  'value-keyword-case': ['lower', { ignoreKeywords: ['dummyValue'] }],
 
   // require a newline or disallow whitespace after the commas of value lists
   'value-list-comma-newline-after': 'always-multi-line',
@@ -92,7 +93,8 @@ module.exports = {
   'value-list-comma-space-before': 'never',
 
   // limit the number of adjacent empty lines within value lists
-  'value-list-max-empty-lines': 0,
+  // disabled for styled-components to prevent false positives
+  'value-list-max-empty-lines': null,
 
   // require or disallow an empty line before custom properties (Autofixable)
   'custom-property-empty-line-before': [
@@ -119,7 +121,8 @@ module.exports = {
   'declaration-bang-space-before': 'always',
 
   // require a newline or disallow whitespace after the colon of declarations
-  'declaration-colon-newline-after': 'always-multi-line',
+  // disabled for styled-components to prevent false positives
+  'declaration-colon-newline-after': null,
 
   /**
    * require a single space or disallow whitespace after the colon of
@@ -134,12 +137,8 @@ module.exports = {
   'declaration-colon-space-before': 'never',
 
   // require or disallow an empty line before declarations (Autofixable)
-  'declaration-empty-line-before': [
-    'never',
-    {
-      ignore: ['after-declaration', 'inside-single-line-block']
-    }
-  ],
+  // disabled for styled-components to prevent false positives
+  'declaration-empty-line-before': null,
 
   /**
    * require a newline or disallow whitespace after the semicolons of
@@ -262,7 +261,8 @@ module.exports = {
   'selector-type-case': 'lower',
 
   // require a newline or disallow whitespace after the commas of selector lists
-  'selector-list-comma-newline-after': 'always',
+  // disabled for styled-components to prevent false positives
+  'selector-list-comma-newline-after': null,
 
   /**
    * require a newline or disallow whitespace before the commas of selector
@@ -401,5 +401,6 @@ module.exports = {
   'no-eol-whitespace': true,
 
   // disallow missing end-of-source newlines (Autofixable)
-  'no-missing-end-of-source-newline': true
+  // disabled for styled-components to prevent false positives
+  'no-missing-end-of-source-newline': null
 };
