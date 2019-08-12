@@ -4,6 +4,8 @@ Topxel's shareable rules and configuration for [stylelint](https://stylelint.io/
 
 Use it as is or as a foundation for your own custom stylint configuration.
 
+This configuration has been modified for its use with `styled-components`. That's why some rules have been disabled or adjusted to prevent false errors.
+
 &nbsp;
 
 ## Installation
@@ -25,6 +27,7 @@ npm install --save-dev stylelint stylelint-config-topxel
 &nbsp;
 
 ## Setup
+
 Topxel's shareable stylelint rules are bundled in `stylelint-config-topxel` package. To enable these rules add a `stylelint` property in your `package.json` or create a `.stylelintrc` file in the root directory. Although we encourage using the first method to avoid having hidden files in your project. See the [stylelint configuration docs](https://stylelint.io/user-guide/configuration/) for more details.
 
 ```json
@@ -116,6 +119,7 @@ For example, to override the rule `string-quotes` from double to single and turn
   }
 }
 ```
+
 &nbsp;
 
 ## License

@@ -10,8 +10,9 @@ module.exports = {
   // disallow an unspaced operator within calc functions
   'function-calc-no-unspaced-operator': true,
 
-  /** disallow direction values in linear-gradient() calls that are not valid
-   *  according to the standard syntax.
+  /**
+   * disallow direction values in linear-gradient() calls that are not valid
+   * according to the standard syntax.
    */
   'function-linear-gradient-no-nonstandard-direction': true,
 
@@ -25,7 +26,7 @@ module.exports = {
   'shorthand-property-no-redundant-values': true,
 
   // disallow unknown properties
-  'property-no-unknown': [true, { checkPrefixed: true }],
+  'property-no-unknown': [true, { checkPrefixed: true, ignoreProperties: ['/^-styled-mixin/'] }],
 
   // disallow !important within keyframe declarations
   'keyframe-declaration-no-important': true,
@@ -36,13 +37,15 @@ module.exports = {
     { ignore: 'consecutive-duplicates' }
   ],
 
-  /** disallow longhand properties that can be combined into one shorthand
-   *  property
+  /**
+   * disallow longhand properties that can be combined into one shorthand
+   * property
    */
   'declaration-block-no-redundant-longhand-properties': true,
 
-  /** disallow shorthand properties that override related longhand properties
-   *  within declaration blocks
+  /**
+   * disallow shorthand properties that override related longhand properties
+   * within declaration blocks
    */
   'declaration-block-no-shorthand-property-overrides': true,
 
@@ -91,16 +94,19 @@ module.exports = {
   // limit the depth of nesting
   'max-nesting-depth': 3,
 
-  /** disallow selectors of lower specificity from coming after overriding
-   *  selectors of higher specificity
+  /**
+   * disallow selectors of lower specificity from coming after overriding
+   * selectors of higher specificity
    */
   'no-descending-specificity': true,
 
   // disallow duplicate selectors
-  'no-duplicate-selectors': true,
+  // disabled for styled-components to prevent false positives
+  'no-duplicate-selectors': null,
 
   // disallow empty sources
-  'no-empty-source': true,
+  // disabled for styled-components to prevent false positives
+  'no-empty-source': null,
 
   // disallow extra semicolons
   'no-extra-semicolons': true,

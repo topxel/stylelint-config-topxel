@@ -1,8 +1,16 @@
 {
   "name": "stylelint-config-topxel",
-  "version": "1.0.0",
-  "description": "Topxel's stylelint rules and configuration.",
-  "keywords": ["stylelint", "stylelint-config", "config", "css", "topxel"],
+  "version": "2.0.0",
+  "description":
+    "Topxel's stylelint rules and configuration for styled-components.",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "styled-components",
+    "config",
+    "css",
+    "topxel"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/topxel/stylelint-config-topxel",
   "bugs": {
@@ -21,10 +29,20 @@
     "node": ">=6"
   },
   "dependencies": {
-    "merge": "^1.2.0",
-    "stylelint-order": "^0.7.0"
+    "merge": "^1.2.1",
+    "stylelint-order": "^3.0.1",
+    "stylelint-processor-styled-components": "^1.8.0"
   },
   "peerDependencies": {
     "stylelint": "^8.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-topxel": "^1.2.0",
+    "prettier": "^1.10.2"
+  },
+  "eslintConfig": {
+    "plugins": ["eslint-plugin-topxel"],
+    "extends": "plugin:eslint-plugin-topxel/recommended"
   }
 }
